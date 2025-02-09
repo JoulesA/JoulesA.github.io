@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alex Joules - Portafolio</title>
+
+    <!-- Tipografías -->
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;600&family=Libre+Baskerville&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/style.css">
+
+    <!-- Font Awesome para iconos -->
+    <script src="https://kit.fontawesome.com/your-kit-code.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+
+    <!-- 🔹 Barra de Navegación -->
+    <header>
+        <nav>
+            <h1 class="Iniciales">A J</h1>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="servicios.html">Servicios</a></li>
+                <li><a href="emprendimientos.html">Emprendimientos</a></li>
+                <li><a href="proyectos.html">Proyectos</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- 🔹 Contenido Principal -->
+    <main>
+        <section class="services">
+            <div class="services-container">
+                <h1>Servicios</h1>
+                <p class="services-intro">
+                    Aquí describo brevemente los servicios que ofrezco, el valor que aportan a mis clientes
+                    y cómo puedo ayudarles a alcanzar sus objetivos.  Este párrafo debe ser conciso y atractivo.
+                    Invita a los visitantes a explorar los detalles de cada servicio.
+                </p>
+        
+                <ul class="services-list">
+                    <li class="service-item">
+                        <button class="service-toggle" aria-expanded="false" aria-controls="service-details-1">
+                            <span class="service-title">Desarrollo Web Full Stack</span>
+                            <i class="fas fa-chevron-down service-icon"></i>  </button>
+                        <div id="service-details-1" class="service-details" hidden>
+                            <p>Creación de aplicaciones web completas, desde el frontend (interfaz de usuario) hasta el backend (lógica del servidor y base de datos).  Utilizo tecnologías modernas como React, Node.js, y bases de datos NoSQL (MongoDB) y SQL (PostgreSQL).</p>
+                            <p><strong>Ejemplos:</strong></p>
+                            <ul>
+                                <li>Aplicaciones web de comercio electrónico.</li>
+                                <li>Plataformas de gestión de contenidos (CMS) personalizadas.</li>
+                                <li>Aplicaciones web progresivas (PWA).</li>
+                                <li>APIs RESTful.</li>
+                            </ul>
+                            <p><strong>Costos:</strong>  Desde $X por proyecto (o $Y por hora).  El precio varía según la complejidad y el alcance del proyecto.  Contáctame para una cotización personalizada.</p>
+                        </div>
+                    </li>
+        
+                    <li class="service-item">
+                        <button class="service-toggle" aria-expanded="false" aria-controls="service-details-2">
+                            <span class="service-title">Diseño UX/UI</span>
+                             <i class="fas fa-chevron-down service-icon"></i>
+                        </button>
+                        <div id="service-details-2" class="service-details" hidden>
+                            <p>Diseño de interfaces de usuario (UI) atractivas y fáciles de usar, y experiencia de usuario (UX) intuitiva y eficiente.  Realizo investigación de usuarios, wireframing, prototipado y pruebas de usabilidad.</p>
+                            <p><strong>Ejemplos:</strong></p>
+                            <ul>
+                                <li>Diseño de interfaces para aplicaciones web y móviles.</li>
+                                <li>Rediseño de sitios web existentes para mejorar la usabilidad.</li>
+                                <li>Creación de prototipos interactivos.</li>
+                                <li>Pruebas de usabilidad con usuarios reales.</li>
+                            </ul>
+                             <p><strong>Costos:</strong>  Desde $A por proyecto (o $B por hora).  El precio varía según la complejidad y el alcance del proyecto.  Contáctame para una cotización detallada.</p>
+                        </div>
+                    </li>
+                    <li class="service-item">
+                        <button class="service-toggle" aria-expanded="false" aria-controls="service-details-3">
+                            <span class="service-title">Consultoría Tecnológica</span>
+                            <i class="fas fa-chevron-down service-icon"></i>
+                        </button>
+                        <div id="service-details-3" class="service-details" hidden>
+                            <p>Ofrezco asesoramiento experto en tecnología para ayudar a empresas y emprendedores a tomar decisiones estratégicas, optimizar sus procesos y resolver problemas técnicos.  Puedo ayudarte con la selección de tecnologías, la planificación de proyectos, la arquitectura de software y la gestión de equipos de desarrollo.</p>
+                            <p><strong>Ejemplos:</strong></p>
+                            <ul>
+                                <li>Evaluación de la infraestructura tecnológica existente.</li>
+                                <li>Recomendaciones para mejorar la eficiencia y reducir costos.</li>
+                                <li>Asesoramiento en la selección de proveedores de tecnología.</li>
+                                <li>Desarrollo de planes de transformación digital.</li>
+                            </ul>
+                            <p><strong>Costos:</strong>  Desde $C por hora.  Ofrezco paquetes de consultoría personalizados según las necesidades de cada cliente.</p>
+                        </div>
+                    </li>
+        
+                </ul>
+            </div>
+            <div class="transicion-verde"></div>
+        </section>
+
+    </main>
+
+    <!-- 🔹 Footer -->
+    <footer>
+        <p>&copy; 2024 Alexis Jiménez . Todos los derechos reservados.</p>
+        <div class="social-icons">
+            <a href="https://www.instagram.com/alexis_jm1512/" target="_blank" rel="noopener noreferrer"><i class="fab fa-instagram"></i></a>
+            <a href="https://github.com/JoulesA" target="_blank"><i class="fab fa-github"></i></a>
+            <a href="https://linkedin.com/in/christopher-alexis-jiménez-mejía-85b980194" target="_blank"><i class="fab fa-linkedin"></i></a>
+            <a href="mailto:cjimenezm1298@gmail.com" target="_blank"><i class="fas fa-envelope"></i></a>
+            <a> <i class="fa fa-phone"></i> 722 374 37 42</a>
+        </div>
+    </footer>
+
+    <script src="assets/js/main.js"></script> </body>
+
+</body>
+</html>

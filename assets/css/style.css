@@ -1,0 +1,462 @@
+/* Fuentes */
+@font-face {
+    font-family: 'RoxboroughCF';
+    src: url('../fonts/RoxboroughCF.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* Variables de colores */
+:root {
+    --verde-oscuro: #1d3323;
+    --dorado: #907654;
+    --blanco: #f5f5f5;
+}
+
+/* Estilos generales */
+
+body {
+    font-family: 'Raleway', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: var(--blanco);
+    color: var(--verde-oscuro);
+}
+
+/*  Navegación */
+header {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 100;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: auto;
+    padding: 0 20px;
+
+}
+
+nav h1 {
+    font-family: 'Libre Baskerville', serif;
+    color: var(--dorado);
+    font-size: 24px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li {
+    display: inline;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: var(--blanco);
+    font-weight: 600;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: var(--dorado);
+    border-radius: 5px;
+    padding: 5px 15px;
+    background-color: #000000;
+
+    
+}
+
+/* Sección principal (Hero) */
+.hero {
+    text-align: center;
+    padding: 150px 0px 0px 0px;
+    background-image: url('../images/hero.jpg') ;
+    color: var(--blanco);
+}
+.hero h1 {
+    background-color: #000000;
+    font-family: 'RoxboroughCF';
+    color: var(--dorado);
+    font-size: 60px;
+
+}
+.hero h2 {
+    font-size: 25px;
+    font-family: 'Raleway', serif;
+}
+
+.hero p {
+    font-size: 18px;
+}
+
+.typing-text::after {
+    content: '|';
+    display: inline-block;
+    animation: blink 0.7s infinite;
+}
+@keyframes blink {
+    50% { opacity: 0; }
+}
+
+.btn {
+    display: inline-block;
+    margin-top: 15px;
+    padding: 10px 20px;
+    background-color: var(--dorado);
+    color: var(--blanco);
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+    transition: background 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #70583a;
+}
+
+.Iniciales {
+    font-family: 'RoxboroughCF';
+    color: var(--dorado);
+    font-size: 24px;
+}
+
+/* 🔹 Footer */
+footer {
+    background-color: var(--verde-oscuro);
+    color: var(--blanco);
+    text-align: center;
+    padding: 20px;
+
+}
+
+.social-icons a {
+    color: var(--dorado);
+    margin: 0 10px;
+    font-size: 20px;
+    text-decoration: none;
+}
+
+.social-icons a:hover {
+    color: var(--blanco);
+}
+
+.footer-section {
+    flex: 1; /* Distribuye el espacio disponible entre las secciones */
+    margin-bottom: 2rem; /* Espacio entre las secciones */
+    min-width: 250px; /* Ancho mínimo para cada sección */
+}
+
+.footer-section h3 {
+    margin-bottom: 1rem;
+    font-size: 1.2rem;
+    border-bottom: 2px solid #444;
+    padding-bottom: 0.5rem;
+}
+
+
+/*#############################################################*/
+
+
+/* Contenedor del scroll */
+.scroll-container {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    max-width: 900px;
+    margin: auto;
+}
+
+/* Efecto de degradado en los extremos */
+.scroll-wrapper {
+    position: relative;
+    width: 100%;
+    display: flex;
+    overflow: hidden;
+    mask-image: linear-gradient(to right, rgba(0,0,0,0), rgba(0,0,0,1) 20%, rgba(0,0,0,1) 80%, rgba(0,0,0,0));
+}
+
+/* Contenido del scroll */
+.scroll-content {
+    display: flex;
+    gap: 30px;
+    white-space: nowrap;
+    padding: 10px 0;
+}
+
+/* Habilidades individuales */
+.skill {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    background: #222;
+    padding: 15px 20px;
+    border-radius: 10px;
+    font-size: 18px;
+    font-weight: bold;
+    color: white;
+    margin-right: 40px;
+}
+
+/* Iconos */
+.skill img {
+    width: 40px;
+    height: 40px;
+}
+
+/* Animación */
+@keyframes scroll-right {
+    from { transform: translateX(0); }
+    to { transform: translateX(-100%); }
+}
+
+@keyframes scroll-left {
+    from { transform: translateX(-100%); }
+    to { transform: translateX(0); }
+}
+
+/* Aplicar animaciones */
+.right .scroll-content {
+    animation: scroll-right 10s linear infinite;
+}
+
+.left .scroll-content {
+    animation: scroll-left 10s linear infinite;
+}
+
+/* Sección About */
+.about-section {
+    background: black; /* Fondo negro */
+    color: white; /* Texto en blanco */
+    padding: 80px 10%;
+    display: flex;
+    justify-content: center;
+}
+
+/* Contenedor principal */
+.about-container {
+    display: flex;
+    align-items: center;
+    gap: 50px;
+    max-width: 1100px;
+}
+
+/* Texto de la izquierda */
+.about-text {
+    flex: 1;
+    text-align: left;
+    width: 50%;
+}
+
+.about-text h2 {
+    font-size: 32px;
+    font-family: "RoxboroughCF", sans-serif;
+    margin-bottom: 10px;
+    color: var(--dorado);
+}
+.about-text h3 {
+    font-size: 25px;
+    font-family: "RoxboroughCF", sans-serif;
+    margin-bottom: 10px;
+}
+
+.about-text p {
+    font-size: 18px;
+    font-family: "Raleway", serif;
+    line-height: 1.5;
+}
+
+/* Imagen a la derecha */
+.about-image {
+    flex: 1;
+    text-align: center;
+}
+
+.about-image img {
+    width: 100%;
+    max-width: 350px;
+    border-radius: 15px;
+    box-shadow: 0px 0px 15px rgba(255, 255, 255, 0.2);
+}
+
+/* Diseño responsive */
+@media (max-width: 768px) {
+    .about-container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .about-text {
+        text-align: center;
+    }
+
+    .about-image img {
+        max-width: 250px;
+    }
+}
+/* Transición en degradado negro */
+.transicion {
+    width: 100%;
+    height: 100px; /* Ajusta la altura según necesites */
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, black 100%);
+}
+.transicion-verde {
+    width: 100%;
+    height: 100px; /* Ajusta la altura según necesites */
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, #1d3323 100%);
+}
+
+/* Cards Section*/
+.cards-section {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    background: linear-gradient(to bottom, black 0%,  #1d3323 70%);
+
+    padding: 50px 0;
+}
+.card {
+    width: 250px;
+    height: 350px;
+    background: url('placeholder.jpg') center/cover no-repeat;
+    filter: grayscale(80%);
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    transition: filter 0.5s ease;
+    cursor: pointer;
+    border-radius: 10px;
+}
+.card-stonks{
+    background-image: url('../images/stonks.jpg');
+}
+
+.card-services{
+    background-image: url('../images/Tutorias.jpg');
+}
+
+.card-projects{
+    background-image: url('../images/Proyectos.jpeg');
+}
+
+.card:hover {
+    filter: grayscale(0%);
+}
+.card-content {
+    background: rgba(0, 0, 0, 0.7);
+    color: white;
+    text-align: center;
+    padding: 20px;
+    width: 100%;
+}
+button {
+    background: #907654;
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+button:hover {
+    background: #b08968;
+}
+
+.education {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    background: #1d3323;
+    text-align: center;
+    padding: 50px 0;
+}
+
+.education h2 {
+    font-family: 'RoxboroughCF';
+    color: var(--dorado);
+}
+
+/*##############################################################################*/
+/* Estilos generales de la sección de servicios */
+.services {
+    background: linear-gradient(to bottom, #000000 85%, #1d3323 100%);
+    background-image: url('../images/hero.jpg');
+    padding: 4rem 0 0 0;
+}
+
+.services h1{
+    font-family: 'RoxboroughCF';
+    color: var(--dorado);
+    font-size: 60px;
+}
+
+.services-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 2rem;
+    text-align: center;
+    justify-content: center;
+}
+
+.services-intro {
+    margin-bottom: 2rem;
+    font-size: 1.1rem;
+    color: var(--blanco);
+    background: rgba(0, 0, 0, 0.7);
+}
+
+.services-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.service-item {
+    margin-bottom: 1.5rem;
+    overflow: hidden; /* Importante para ocultar el contenido inicialmente */
+}
+
+.service-toggle {
+    background: #000000;
+    color: #fff;
+    border: none;
+    padding: 1rem 1rem;
+    width: 100%;
+    text-align: left;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: background-color 0.3s ease;
+    font-size: 1.1rem;
+     font-weight: bold;
+}
+
+.service-toggle:hover,
+.service-toggle[aria-expanded="true"] {
+    background-color: #1d3323;
+     color: var(--dorado);
+}
+.service-icon {
+    transition: transform 0.3s ease;  /* Suaviza la rotación */
+}
+.service-toggle[aria-expanded="true"] .service-icon {
+    transform: rotate(180deg); /* Rota el icono cuando está abierto */
+}
+
+.service-details {
+    padding: 1.5rem;
+    background-color: #fff;
+}
+.service-details ul{
+    list-style: disc;
+    margin-left: 20px;
+}
